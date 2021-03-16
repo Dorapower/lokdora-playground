@@ -1,5 +1,6 @@
 package com.lokdora.playground;
 
+import com.lokdora.playground.registry.ModBlocks;
 import com.lokdora.playground.registry.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -8,5 +9,6 @@ public class Playground implements ModInitializer {
     @Override
     public void onInitialize() {
         ModItems.registerItems();
+        ModBlocks.registerBlocks();
     }
 }
